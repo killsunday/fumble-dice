@@ -6,7 +6,7 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    background-color: #666;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -52,9 +52,47 @@ button {
 button.active {
     border: 1px solid red;
 }
+
+.segmented-button button:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.segmented-button button { 
+    border-color: #aaa;
+    border-radius: 0;
+    border-width: 0 1px 0 0;
+}
+
+.segmented-button button.active,
+.segmented-button button.active:hover {
+    background-color: #999;
+    color: #333;
+}
+
+.segmented-button button:last-child {
+    border-radius: 0 8px 8px 0;
+    border-right: 0;
+}
+
+.segmented-button button:hover {
+    background-color: #333;
+    border-color: #aaa;
+    color: #fff;
+}
+
+.segmented-button button:last-child:hover {
+    border-right: 0;
+}
+
+.segmented-button button:focus,
+.segmented-button button:focus-visible {
+    outline: none;
+}
+
 button:hover {
     border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;

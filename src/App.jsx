@@ -38,7 +38,7 @@ function App() {
 
     return (
         <div className="App">
-            <section>
+            <section className="segmented-button">
                 <button onClick={handleChangeType} value="melee" className={type === "melee" ? "active" : ""}>Melee</button>
                 <button onClick={handleChangeType} value="ranged" className={type === "ranged" ? "active" : ""}>Ranged</button>
                 <button onClick={handleChangeType} value="spell" className={type === "spell" ? "active" : ""}>Spell</button>
